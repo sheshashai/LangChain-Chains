@@ -1,3 +1,12 @@
+"""
+Simple Chain Example - LangChain LCEL
+
+This script demonstrates a basic sequential chain that takes a topic as input
+and generates 5 interesting facts about it using OpenAI's language model.
+
+The chain follows this flow: Prompt Template → Language Model → String Parser
+"""
+
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate

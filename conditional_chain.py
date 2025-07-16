@@ -1,3 +1,15 @@
+"""
+Conditional Chain Example - LangChain LCEL
+
+This script demonstrates a conditional branching chain that:
+1. First classifies user feedback as positive or negative using sentiment analysis
+2. Then branches to different response logic based on the classification
+3. Generates appropriate responses tailored to the sentiment
+
+The chain showcases dynamic routing and conditional logic in LangChain workflows.
+Uses Pydantic for structured output parsing and RunnableBranch for conditional execution.
+"""
+
 from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv

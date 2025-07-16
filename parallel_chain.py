@@ -1,3 +1,15 @@
+"""
+Parallel Chain Example - LangChain LCEL
+
+This script demonstrates a parallel processing chain that takes a long text
+and simultaneously generates:
+1. A summary of the text (using OpenAI)
+2. A quiz with 5 questions (using Google AI)
+
+The results are then merged into a single comprehensive document.
+The chain showcases how to run multiple AI tasks concurrently for efficiency.
+"""
+
 from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
